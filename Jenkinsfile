@@ -12,9 +12,14 @@ pipeline {
             sh    "echo 'My first job running' >firstjob.txt"
             }
         }  
-        stage("Maven version") {
+        stage("Environment") {
             steps {
                 sh "cat Test"
+            }
+        } 
+        stage("Morning wish") {
+            steps {
+                sh "echo 'Good morning vijay'"
             }
         }    
     }
