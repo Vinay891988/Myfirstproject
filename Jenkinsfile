@@ -19,7 +19,7 @@ pipeline {
         } 
         stage("Morning wish") {
             steps {
-                sh "echo 'Good morning vijay'"
+                print("Good morning $name")
             }
         }    
     }
